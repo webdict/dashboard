@@ -1,0 +1,21 @@
+@import '../../conf/vars';
+.word-info {
+  &-view {
+    user-select: text;
+  }
+  &-edit {
+    display: flex;
+  }
+  &-input {
+    flex: auto;
+    margin-right: 4px;
+  }
+  &-info {
+    opacity: 0;
+    transition: 1.24s;
+    color: gray;
+    &:hover {
+      opacity: 1;
+    }
+  }
+}

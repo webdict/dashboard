@@ -1,0 +1,49 @@
+// theme color:
+$color: #379cf6;
+
+// theme color lighten:
+$color-white-10: lighten($color, 10%);
+$color-white-20: lighten($color, 20%);
+$color-white-30: lighten($color, 30%);
+$color-white-40: lighten($color, 40%);
+$color-white-50: lighten($color, 50%);
+$color-white-60: lighten($color, 60%);
+$color-white-70: lighten($color, 70%);
+$color-white-80: lighten($color, 80%);
+$color-white-90: lighten($color, 90%);
+
+// theme color darken:
+$color-black-10: darken($color, 10%);
+$color-black-20: darken($color, 20%);
+$color-black-30: darken($color, 30%);
+$color-black-40: darken($color, 40%);
+$color-black-50: darken($color, 50%);
+$color-black-60: darken($color, 60%);
+$color-black-70: darken($color, 70%);
+$color-black-80: darken($color, 80%);
+$color-black-90: darken($color, 90%);
+
+// default font color:
+$color-font: #222222;
+
+// default background color:
+$color-background: #f5f5f9;
+
+// status colors:
+$color-fail: #e74c3c;
+$color-okay: #2ecc71;
+$color-warn: #f1c40f;
+$color-info: #23a2b7;
+$color-dead: #6c757c;
+
+%box-shadow-xx {
+  box-shadow: 0 0 16px darken(#eee, 10%);
+}
+
+%box-shadow-x {
+  box-shadow: 0 0 8px darken(#eee, 5%);
+}
+
+%box-shadow {
+  box-shadow: 0 0 4px #eee;
+}

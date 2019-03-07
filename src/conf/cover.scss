@@ -1,0 +1,36 @@
+#root {
+  height: 100vh;
+}
+.ant-layout {
+  height: 100%;
+}
+
+body {
+  user-select: none;
+}
+
+.page-content {
+  background: white;
+  position: relative;
+  overflow: auto;
+  padding: 8px;
+}
+
+.page-content {
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+/* .page-content::-webkit-scrollbar,
+.ant-dropdown-menu::-webkit-scrollbar {
+display: none;
+} */
+
+.ant-select-selection--multiple {
+  height: 32px;
+  max-height: 32px;
+  overflow: hidden;
+}
