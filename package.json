@@ -2,6 +2,7 @@
   "name": "dict.ngolin.com",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://dict.ngolin.com/",
   "dependencies": {
     "antd": "~3.14.1",
     "hife": "~1.1.4",
