@@ -48,7 +48,7 @@ export default function SignForm({ onSubmit, loading }) {
     }
   }
   function onUsernameChange({ target: { value } }) {
-    setUsername(value.toLowerCase());
+    setUsername(value.trim().toLowerCase());
     setUsernameValidateStatus('validating');
     setLabel(-2);
   }
@@ -73,7 +73,7 @@ export default function SignForm({ onSubmit, loading }) {
     }
   }
   function onPasswordChange({ target: { value } }) {
-    setPassword(value);
+    setPassword(value.trim());
     setPasswordValidateStatus('validating');
   }
   function testPassword() {

@@ -8,10 +8,10 @@ import React from 'react';
 import logoUrl from '../../asset/images/logo.png';
 import './style.scss';
 
-export default function LogoView({ loading }) {
+export default function LogoView() {
   return (
     <div className="logo-view-main">
-      <img src={logoUrl} />
+      <img src={logoUrl} alt="Logo" />
     </div>
   );
 }

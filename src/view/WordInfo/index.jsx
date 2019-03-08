@@ -35,7 +35,7 @@ export default function WordInfo({ word, info, onSubmit }) {
           value={_info}
           size="small"
         />
-        <Button onClick={onClick} loading={loading} type="dashed" size="small">
+        <Button onClick={onClick} loading={loading} type="primary" size="small">
           完成
         </Button>
       </div>
