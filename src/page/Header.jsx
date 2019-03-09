@@ -28,7 +28,10 @@ export default function Header() {
         backgroundColor: 'white',
         padding: '0 8px',
         display: 'flex',
-        alignItems: 'center'
+        alignItems: 'center',
+        boxShadow: '0 0 8px #ccc',
+        position: 'relative',
+        zIndex: '1'
       }}
     >
       <img

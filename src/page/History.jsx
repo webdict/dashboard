@@ -93,7 +93,7 @@ export default function Hist({
       )}`;
   }
   return (
-    <React.Fragment>
+    <div className="page-content">
       <Form style={{ marginBottom: '8px' }}>
         <Row gutter={12}>
           <Col span={2}>
@@ -168,7 +168,7 @@ export default function Hist({
         pagination={pagination}
         columns={columns(onAction, list)}
       />
-    </React.Fragment>
+    </div>
   );
 }
 

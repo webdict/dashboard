@@ -57,7 +57,7 @@ export default function Hist({
     console.log('dateEnd', dateEnd.valueOf());
   }
   return (
-    <React.Fragment>
+    <div className="page-content">
       <Form style={{ marginBottom: '8px' }}>
         <Row gutter={12}>
           <Col span={6}>
@@ -102,7 +102,7 @@ export default function Hist({
         pagination={pagination}
         columns={columns(onAction, list)}
       />
-    </React.Fragment>
+    </div>
   );
 }
 

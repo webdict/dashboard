@@ -12,11 +12,12 @@ body {
 .page-content {
   background: white;
   position: relative;
-  overflow: auto;
   padding: 8px;
 }
 
-.page-content {
+.page-wrapper {
+  padding-top: 8px;
+  overflow: auto;
   &::-webkit-scrollbar {
     display: none;
   }

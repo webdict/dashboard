@@ -36,17 +36,16 @@ function renderRouter({ userflag }) {
         <Router>
           <Layout>
             <Route component={Header} />
-            <Layout>
-              <Layout style={{ padding: '8px 0 0 8px' }}>
-                <Layout className="page-content">
-                  <Switch>
-                    <Route path="/webnote/:page" component={Webnote} />
-                    <Route path="/history/:page" component={History} />
-                    <Redirect from="/webnote" to="/webnote/1" />
-                    <Redirect to="/history/1" />
-                  </Switch>
-                </Layout>
-              </Layout>
+            <Layout className="page-wrapper">
+              <Switch>
+                <Route path="/webnote/:page" component={Webnote} />
+                <Route path="/history/:page" component={History} />
+                <Redirect from="/webnote" to="/webnote/1" />
+                <Redirect to="/history/1" />
+              </Switch>
+              <Layout.Footer style={{ textAlign: 'center' }}>
+                WEBDICT ©2019
+              </Layout.Footer>
             </Layout>
           </Layout>
         </Router>
