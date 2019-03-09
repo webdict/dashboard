@@ -1,7 +1,8 @@
 import React, { useContext, useState } from 'react';
+import SignContainer from '../view/SignContainer';
 import SignForm from '../view/SignForm';
 import LogoView from '../view/LogoView';
-import { Layout, message } from 'antd';
+import { message } from 'antd';
 import Fetch from '../fetch';
 import { userContext } from './Context';
 export default function Signin() {
@@ -23,19 +24,9 @@ export default function Signin() {
     });
   }
   return (
-    <Layout style={{ justifyContent: 'center', alignItems: 'center' }}>
-      <div
-        style={{
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center',
-          flexDirection: 'column',
-          width: '320px'
-        }}
-      >
-        <LogoView />
-        <SignForm onSubmit={onSubmit} loading={loading} />
-      </div>
-    </Layout>
+    <SignContainer>
+      <LogoView />
+      <SignForm onSubmit={onSubmit} loading={loading} />
+    </SignContainer>
   );
 }

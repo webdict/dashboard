@@ -1,0 +1,21 @@
+.sign-container {
+  &-main {
+    justify-content: center;
+    align-items: center;
+    background-image: url(../../asset/images/background.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-color: black;
+  }
+  &-body {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 380px;
+    border-radius: 2px;
+    padding: 32px;
+    box-shadow: 0 0 16px black;
+  }
+}
